@@ -218,7 +218,6 @@ def birthdays(args,book:AddressBook):
         return "No birthdays in the next 7 days."
     return "\n".join(f"{user['name']}: {user['birthday']}" for user in upcoming)
 
-import pickle
 
 def save_data(book, filename="addressbook.pkl"):
     with open(filename, "wb") as f:
